@@ -21,3 +21,29 @@
     font-size: 2em;
     margin-bottom: 30px;
 }
+@keyframes slideRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.reviews-container {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    flex-wrap: nowrap; /* Evita que las tarjetas bajen de línea */
+    animation: slideRightToLeft 10s infinite linear; /* Aplica la animación */
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
