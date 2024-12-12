@@ -1,13 +1,51 @@
-/* Asegúrate de que la animación solo afecte a la sección de los mensajes */
-.reviews-section .reviews-container {
-    display: flex;               /* Para que las tarjetas se alineen en fila horizontal */
-    gap: 20px;                   /* Espacio entre las tarjetas */
-    flex-wrap: nowrap;           /* Para que las tarjetas no se envuelvan en varias filas */
-    overflow: hidden;            /* Oculta las tarjetas fuera del área visible */
-    padding: 20px 0;             /* Espacio alrededor de las tarjetas */
-    animation: slideRightToLeft 10s infinite linear; /* Aplica la animación */
+/* Estilo general para el cuerpo y la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+header {
+    background-color: #ff6f61;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.reviews-section {
+    margin: 30px 0;
+}
+
+.reviews-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para el contenedor de las tarjetas de saludo */
+.reviews-section .reviews-container {
+    display: flex;               /* Disposición en fila horizontal */
+    gap: 20px;                   /* Espacio entre las tarjetas */
+    flex-wrap: nowrap;           /* Las tarjetas no deben ir a una nueva línea */
+    overflow: hidden;            /* Oculta las tarjetas que se salgan del contenedor */
+    padding: 20px 0;             /* Espacio alrededor de las tarjetas */
+    animation: slideRightToLeft 15s linear infinite; /* Animación de deslizamiento */
+}
+
+/* Estilo para cada tarjeta */
 .reviews-section .review-card {
     width: 300px;                /* Ancho fijo para cada tarjeta */
     background-color: #fff;
@@ -18,15 +56,43 @@
     text-align: center;
 }
 
+/* Animación de deslizamiento de las tarjetas de derecha a izquierda */
 @keyframes slideRightToLeft {
     0% {
-        transform: translateX(100%);  /* Comienza fuera de la pantalla por la derecha */
+        transform: translateX(100%); /* Empieza fuera de la pantalla por la derecha */
     }
     100% {
-        transform: translateX(0);     /* Termina en la posición original */
+        transform: translateX(-100%); /* Termina fuera de la pantalla por la izquierda */
     }
 }
 
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Estilo para la imagen centrada */
+.image-center {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-center img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo adicional para la cabecera de la página */
 .reviews-title {
     text-align: center;
     font-size: 2em;
