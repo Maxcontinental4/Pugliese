@@ -47,16 +47,6 @@ header h1 {
 }
 
 
-/* Animación de deslizamiento de las tarjetas de derecha a izquierda */
-@keyframes slideRightToLeft {
-    0% {
-        transform: translateX(100%); /* Empieza fuera de la pantalla por la derecha */
-    }
-    100% {
-        transform: translateX(-100%); /* Termina fuera de la pantalla por la izquierda */
-    }
-}
-
 /* Estilo para el pie de página */
 footer {
     text-align: center;
