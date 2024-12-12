@@ -40,9 +40,8 @@ header h1 {
     display: flex;               /* Disposición en fila horizontal */
     gap: 20px;                   /* Espacio entre las tarjetas */
     flex-wrap: nowrap;           /* Las tarjetas no deben ir a una nueva línea */
-    overflow: hidden;            /* Oculta las tarjetas que se salgan del contenedor */
     padding: 20px 0;             /* Espacio alrededor de las tarjetas */
-    animation: slideRightToLeft 15s linear infinite; /* Animación de deslizamiento */
+    animation: slideRightToLeft 15s linear infinite; /* Aplica la animación */
 }
 
 /* Estilo para cada tarjeta */
@@ -92,9 +91,3 @@ footer p {
     height: auto;
 }
 
-/* Estilo adicional para la cabecera de la página */
-.reviews-title {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 30px;
-}
