@@ -1,4 +1,5 @@
-.reviews-container {
+/* Asegúrate de que la animación solo afecte a la sección de los mensajes */
+.reviews-section .reviews-container {
     display: flex;               /* Para que las tarjetas se alineen en fila horizontal */
     gap: 20px;                   /* Espacio entre las tarjetas */
     flex-wrap: nowrap;           /* Para que las tarjetas no se envuelvan en varias filas */
@@ -7,7 +8,7 @@
     animation: slideRightToLeft 10s infinite linear; /* Aplica la animación */
 }
 
-.review-card {
+.reviews-section .review-card {
     width: 300px;                /* Ancho fijo para cada tarjeta */
     background-color: #fff;
     border: 1px solid #ddd;
