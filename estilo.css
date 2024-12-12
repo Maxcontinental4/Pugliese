@@ -1,49 +1,33 @@
 .reviews-container {
-    display: flex;             /* Para que las tarjetas se alineen en fila horizontal */
-    gap: 20px;                 /* Espacio entre las tarjetas */
-    flex-wrap: nowrap;         /* Para que las tarjetas no se envuelvan en varias filas */
-    overflow-x: auto;          /* Permite el desplazamiento horizontal si las tarjetas exceden el tamaño del contenedor */
-    padding: 20px 0;           /* Espacio alrededor de las tarjetas */
+    display: flex;               /* Para que las tarjetas se alineen en fila horizontal */
+    gap: 20px;                   /* Espacio entre las tarjetas */
+    flex-wrap: nowrap;           /* Para que las tarjetas no se envuelvan en varias filas */
+    overflow: hidden;            /* Oculta las tarjetas fuera del área visible */
+    padding: 20px 0;             /* Espacio alrededor de las tarjetas */
+    animation: slideRightToLeft 10s infinite linear; /* Aplica la animación */
 }
 
 .review-card {
-    width: 300px;              /* Ancho fijo para cada tarjeta */
+    width: 300px;                /* Ancho fijo para cada tarjeta */
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+@keyframes slideRightToLeft {
+    0% {
+        transform: translateX(100%);  /* Comienza fuera de la pantalla por la derecha */
+    }
+    100% {
+        transform: translateX(0);     /* Termina en la posición original */
+    }
 }
 
 .reviews-title {
     text-align: center;
     font-size: 2em;
     margin-bottom: 30px;
-}
-@keyframes slideRightToLeft {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.reviews-container {
-    display: flex;
-    gap: 20px;
-    overflow: hidden;
-    flex-wrap: nowrap; /* Evita que las tarjetas bajen de línea */
-    animation: slideRightToLeft 10s infinite linear; /* Aplica la animación */
-}
-
-.review-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    text-align: center;
 }
