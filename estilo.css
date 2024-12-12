@@ -41,8 +41,9 @@ header h1 {
     gap: 20px;                   /* Espacio entre las tarjetas */
     flex-wrap: nowrap;           /* Las tarjetas no deben ir a una nueva línea */
     padding: 20px 0;             /* Espacio alrededor de las tarjetas */
-    animation: slideRightToLeft 15s linear infinite; /* Aplica la animación */
     width: 100%;                 /* Asegura que el contenedor ocupe todo el ancho disponible */
+    overflow: hidden;            /* Oculta el desbordamiento para que las tarjetas no se vean fuera del contenedor */
+    animation: slideRightToLeft 40s linear infinite; /* Animación de deslizamiento más lenta */
 }
 
 /* Estilo para cada tarjeta */
