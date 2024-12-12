@@ -46,9 +46,9 @@ header h1 {
     animation: slideRightToLeft 40s linear infinite; /* Animación de deslizamiento más lenta */
 }
 
-/* Estilo para cada tarjeta */
+/* Estilo para cada tarjeta con ancho de 5cm */
 .reviews-section .review-card {
-    width: 300px;                /* Ancho fijo para cada tarjeta */
+    width: 5cm;                  /* Ancho fijo para cada tarjeta de 5 cm */
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -92,4 +92,3 @@ footer p {
     max-width: 100%;
     height: auto;
 }
-
