@@ -1,20 +1,10 @@
-/* Fondo general de la página */
-body {
-    background-color: #ffe6e6; /* Rosado claro */
-    margin: 0;
-    font-family: 'Poppins', sans-serif; /* Asegúrate de haber importado esta fuente */
-}
-
-
-
-
-
-
 /* Estilo general para el cuerpo y la página */
 body {
     font-family: Poppins, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
@@ -121,3 +111,4 @@ footer p {
         width: calc(100% - 20px); /* En pantallas muy pequeñas, las tarjetas ocupan el 100% del ancho */
     }
 }
+
