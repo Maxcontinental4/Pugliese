@@ -122,25 +122,6 @@ footer p {
     }
 }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botón Reproducir</title>
-    <style>
-        /* Estilos generales */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc); /* Fondo degradado */
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
     /* Contenedor para centrar el botón y el audio */
 .container {
     text-align: center;  /* Centra el contenido en el contenedor */
