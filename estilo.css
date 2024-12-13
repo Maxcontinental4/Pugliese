@@ -3,7 +3,6 @@ body {
     background-color: #ffe6e6; /* Rosado claro */
     margin: 0;
     font-family: 'Poppins', sans-serif; /* Asegúrate de haber importado esta fuente */
-
 }
 
 
@@ -161,6 +160,7 @@ button:active {
 audio {
     margin-top: 20px; /* Añade un pequeño espacio entre el botón y el reproductor */
 }
+
 
 
 
