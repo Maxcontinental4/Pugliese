@@ -2,7 +2,7 @@
 body {
     background-color: #ffe6e6; /* Rosado claro */
     margin: 0;
-    font-family: 'Poppins', sans-serif; /* Asegúrate de haber importado esta fuente */
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center;     /* Centra el contenido verticalmente */
@@ -13,9 +13,10 @@ body {
 /* Estilo para el contenedor */
 .container {
     display: flex;
-    flex-direction: column; /* Organiza los elementos verticalmente */
+    flex-direction: column;  /* Organiza los elementos verticalmente */
     justify-content: center; /* Centra los elementos dentro del contenedor */
     align-items: center;     /* Asegura que estén centrados horizontalmente */
+    text-align: center;      /* Asegura que el texto dentro esté centrado */
 }
 
 /* Botón de reproducción */
