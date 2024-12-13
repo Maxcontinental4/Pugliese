@@ -141,46 +141,48 @@ footer p {
             align-items: center;
         }
 
-        /* Botón de reproducción */
-        button {
-            background-color: #ffffff;
-            color: #2575fc;
-            border: none;
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-            font-size: 24px;
-            font-weight: bold;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    /* Contenedor para centrar el botón y el audio */
+.container {
+    text-align: center;  /* Centra el contenido en el contenedor */
+}
 
-        /* Hover (efecto al pasar el cursor) */
-        button:hover {
-            background-color: #2575fc;
-            color: #ffffff;
-            transform: scale(1.1);
-            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
-        }
+/* Botón de reproducción */
+button {
+    background-color: #ffffff;
+    color: #2575fc;
+    border: none;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre el botón y el reproductor de audio */
+}
 
-        /* Efecto de pulsación */
-        button:active {
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
+/* Hover (efecto al pasar el cursor) */
+button:hover {
+    background-color: #2575fc;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
 
-        /* Texto debajo del botón */
-        p {
-            color: #ffffff;
-            margin-top: 20px;
-            text-align: center;
-            font-size: 18px;
-        }
-  
+/* Efecto de pulsación */
+button:active {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Alineación del audio */
+audio {
+    margin-top: 20px; /* Añade un pequeño espacio entre el botón y el reproductor */
+}
 
 
 
