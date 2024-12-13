@@ -3,9 +3,7 @@ body {
     background-color: #ffe6e6; /* Rosado claro */
     margin: 0;
     font-family: 'Poppins', sans-serif; /* Asegúrate de haber importado esta fuente */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centra todo el contenido (tanto vertical como horizontal) */
+
 }
 
 
