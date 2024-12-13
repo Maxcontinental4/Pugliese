@@ -57,3 +57,58 @@ footer p {
     max-width: 100%;
     height: auto;
 }
+
+/* General styles for the container and cards */
+.reviews-container {
+    display: flex;                /* Layout en fila */
+    flex-wrap: wrap;              /* Permite que las tarjetas bajen a otra fila si no caben */
+    gap: 15px;                    /* Espaciado entre tarjetas */
+    justify-content: center;      /* Centra las tarjetas dentro del contenedor */
+    padding: 20px;                /* Espaciado interno del contenedor */
+    background-color: #f9f9f9;    /* Fondo claro */
+    border-radius: 10px;          /* Bordes redondeados del contenedor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del contenedor */
+}
+
+.review-card {
+    width: calc(25% - 30px);      /* Las tarjetas ocuparán aproximadamente el 25% del ancho */
+    max-width: 200px;             /* Ancho máximo fijo para no exceder en pantallas grandes */
+    background-color: #fff;       /* Fondo blanco */
+    border: 1px solid #ddd;       /* Borde gris claro */
+    border-radius: 8px;           /* Bordes redondeados */
+    padding: 10px;                /* Espaciado interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center;           /* Centra el texto dentro de las tarjetas */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Animaciones suaves */
+}
+
+.review-card:hover {
+    transform: scale(1.05);       /* Aumenta el tamaño ligeramente al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+.review-card h3 {
+    font-size: 1.2em;             /* Tamaño del título */
+    color: #ff6f61;               /* Color destacado */
+    margin-bottom: 10px;          /* Espacio debajo del título */
+}
+
+.review-card p {
+    font-size: 0.9em;             /* Tamaño del texto del mensaje */
+    color: #666;                  /* Texto en gris oscuro */
+    margin: 0;                    /* Sin márgenes extras */
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .review-card {
+        width: calc(50% - 20px);  /* En pantallas pequeñas, las tarjetas ocupan el 50% del ancho */
+    }
+}
+
+@media (max-width: 480px) {
+    .review-card {
+        width: calc(100% - 20px); /* En pantallas muy pequeñas, las tarjetas ocupan el 100% del ancho */
+    }
+}
+
