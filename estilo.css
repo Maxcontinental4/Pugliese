@@ -122,5 +122,42 @@ footer p {
     }
 }
 
+/* Botón de reproducción */
+button {
+    background-color: #ffffff;
+    color: #2575fc;
+    border: none;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre el botón y el reproductor de audio */
+}
+
+/* Hover (efecto al pasar el cursor) */
+button:hover {
+    background-color: #2575fc;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Efecto de pulsación */
+button:active {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Alineación del reproductor de audio */
+audio {
+    margin-top: 20px; /* Espacio entre el botón y el reproductor */
+}
 
 
